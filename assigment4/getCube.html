@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Cube</title>
+</head>
+<body>
+    <h1>Enter a number</h1>
+    <input onchange="printCube(this)" type="number" name="number" id="number">
+    <script>
+        const  printCube = numberInput => {
+            let num = numberInput.value;
+            let str = `<H1> The cube of given number is ${num * num * num}  </H1>`;
+            document.write(str)
+            alert(`The Cube of given number is ${num * num * num}`);
+        }
+
+    </script>
+
+</body>
+</html>

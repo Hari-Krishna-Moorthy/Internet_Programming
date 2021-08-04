@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Nth Largest</title>
+</head>
+<body>
+  
+   
+</body>
+<script>
+    document.write(` <H1>Enter the number of elements : </H1>
+<input onchange="createInput(this)" type="number" name="number" id="count">
+`);
+    var n = 0;
+    var arr = [];
+    const  createInput = countInput => {
+        let display = `<H1>Enter the elements : </H1>`
+        n = Number(countInput.value);
+        for(let ind=0;ind<n;ind++) {
+            display += `\n  <h3>Enter the ${ind+1}th element</h3>`
+            display += `\n <input type="number" id="element${ind+1}">`
+        }
+            display += `\n <br><br> <button onclick="getNthlargest()" >SUBMIT</button>`
+        document.write(display);
+    }
+
+    const getNthlargest = () => {
+        for(let ind=0;ind<n;ind++) {
+            arr.push(Number(document.getElementById(`element${ind+1}`).value))
+        }
+
+        document.write(`<H1>Enter the n th term : </H1>
+<input onchange="display(this)" type="number" name="number" id="display">` );
+    }
+    const display = nthInput => {
+        let k = Number(nthInput.value);
+        let res = ` <br><br>  
+                   <H1> N th Largest Element is ${arr.sort( (a, b)=> a-b)[k-1]} </H1>`
+
+        document.write(res);
+    }
+
+</script>
+
+</html>
+
+
+function findNthLargest(arr, n){
+     
+    for(var i = 0; i < arr.length; i++){
+        
+      for(var j = 0; j < ( arr.length - i -1 ); j++){
+          
+        if(arr[j] > arr[j+1]){
+            
+          var temp = arr[j]
+          arr[j] = arr[j + 1]
+          arr[j+1] = temp
+        }
+      }
+    }
+    return arr[n];
+   }
+     

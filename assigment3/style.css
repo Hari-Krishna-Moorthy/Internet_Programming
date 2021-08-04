@@ -1,0 +1,70 @@
+
+
+.container {
+  padding: 16px;
+}
+
+input[type=text], 
+input[type=password], 
+input[type=tel],
+input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+label {
+    text-align: center;
+}
+
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=tel]:focus,
+input[type=number]:focus { 
+  background-color: #ddd;
+  outline: none;
+}
+input::placeholder {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 15px;
+}
+input:valid {
+    font-family:monospace;
+    text-align: center;
+    font-size: 15px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+.center {
+    text-align: center;
+    border: 3px solid green;
+    margin: 0 22% 0 22%;
+}
+b {
+    font: 20px sans-serif;
+}

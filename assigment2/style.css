@@ -1,0 +1,84 @@
+/* body {
+    background-color: #C5D3F6;
+     background-image: url("./How-to-Survive-on-A-Deserted-Island-810x539.jpg"); 
+     background-repeat:no-repeat; 
+   }
+   */
+/* 
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: White;
+    font-style: oblique;
+    font-size: 40px;
+    font-weight: bold;
+}
+div {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    background-color: #D8E2F9;
+    color: #5E6169;
+
+    width: 50%;
+    background: #1AA6AB;
+    transition: width 2s, height 4s;
+  }
+  
+div:hover {
+    width: 100%;
+} */
+/* 
+column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+  } */
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+/* 
+.color-1 {
+    background-color: #1A43AB;
+    color: #1C7D79;
+}
+.color-2 {
+    background-color: #1A43AB;
+    color: #424242;
+}
+.color-3 {
+    background-color: #1A43AB;
+    color: #304271;
+} */
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    border: 2px  #0F2763;
+    border-radius: 5px;
+    border-style: dashed;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAFFF;
+  }
+  p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+
+/* Adding red color to p */
+
+p {
+  color: res;
+}

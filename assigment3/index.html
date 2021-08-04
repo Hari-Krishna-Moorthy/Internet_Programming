@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="center" >
+    <form action="#" id="form" method="POST" onsubmit="validatePassword()" >
+        <div class="container">
+        <div>
+          <label for="username"><b>Username</b></label> </br>
+          <input type="text" placeholder="Enter Username" name="username" id="username" >
+        </div>
+        <div>
+          <label for="age"><b>Age</b></label> </br>
+          <input type="number" placeholder="Enter Age" name="age" id="age" >
+        </div>
+        <div>
+          <label for="password"><b>Password</b></label> </br>
+          <input type="password" placeholder="Enter Password" name="password" id="password" >
+        </div>
+        <div>
+          <label for="phonenumber"><b>Phone Number</b></label> </br>
+          <input type="tel" placeholder="Enter Phonenumber" name="phonenumber" id="phonenumber" >
+        </div>
+        <div>
+          <label for="qualification"><b>Qualification</b></label> </br>
+          <input type="text" placeholder="Qualification" name="qualification" id="qualification" >
+        </div>
+        <div>
+          <hr>
+          <button class="btn" type="submit" class="registerbtn">Register</button>
+        </div>
+        </div>
+      </form>
+    </div>
+
+    </body>
+    <script src="./app.js"></script>
+</html>
